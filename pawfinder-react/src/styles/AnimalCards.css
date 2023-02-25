@@ -1,0 +1,30 @@
+.card-grid {
+  display: flex;
+  grid-template-columns: auto auto auto;
+}
+
+.card-container {
+  width: 30%;
+  margin: 20px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text {
+  height: 100%;
+  margin-bottom: 1em;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+
+}
+
+.card-img {
+  width: 100%;
+  aspect-ratio : 1 / 1;
+}

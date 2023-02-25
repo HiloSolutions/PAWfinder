@@ -1,0 +1,1 @@
+//when the user clicks match, they have the option to view profile of the animal

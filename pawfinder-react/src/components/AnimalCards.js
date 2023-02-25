@@ -2,16 +2,19 @@
 import MatchButton from "./buttons/MatchButton";
 import SkipButton from "./buttons/SkipButton";
 
-function AnimalCards(){
-  return(
+function AnimalCards(props) {
+  console.log(props);
+  return (
     <div className="card-container">
-      <img alt="animal here" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0k2oxtGAyhqykN5Fmh_m7Iz8_mjomums8uiA1hqAo&s"></img>
-      <h2>Yehhefer Elizabeth</h2>
-      <p>I am a happy cat looking for a loving home. I am good with kids and other animals.</p>
-      <div>
-        < MatchButton />
-        < SkipButton />
+      <img className="card-img" alt={props.name} src={props.img1}></img>
+      <div className="card-text">
+        <h2>{props.name}</h2>
+        <p>{props.description}</p>
       </div>
+      <footer className="card-footer">
+          < SkipButton />
+          < MatchButton />
+        </footer>
     </div>
   )
 }
