@@ -2,11 +2,14 @@
 
 
 // load .env data into process.env
-require("dotenv").config();
-const morgan = require('morgan');
+require('dotenv').config()
+
+//server
 const express = require("express"); //load express
 const app = express();
-//const PORT = process.env.PORT || 8080;
+
+//middleware
+const morgan = require('morgan');
 
 
 const indexRouter = require("./routes/index.js");
@@ -26,3 +29,6 @@ app.use(morgan);
 app.listen(3000, () => {
   console.log('Running at Port 3000');
 });
+
+//vars to delete
+const

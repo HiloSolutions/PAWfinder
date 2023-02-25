@@ -1,6 +1,8 @@
+const dotenv = require('dotenv');
+
 //import React, { useEffect, createContext, useState } from "react";
 //const AuthContext = createContext();
-const petFinderKey = process.env;
+const petFinderKey = process.env.PORT;
 
 console.log(petFinderKey);
 
