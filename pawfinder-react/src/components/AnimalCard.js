@@ -1,11 +1,12 @@
 
 import MatchButton from "./buttons/MatchButton";
 import SkipButton from "./buttons/SkipButton";
+import React, { useState } from "react";
 
-function AnimalCards(props) {
-  console.log(props);
+function AnimalCard(props) {
+
   return (
-    <div className="card-container">
+    <div className="card-container" id={props.id}>
       <img className="card-img" alt={props.name} src={props.img1}></img>
       <div className="card-text">
         <h2>{props.name}</h2>
@@ -19,4 +20,4 @@ function AnimalCards(props) {
   )
 }
 
-export default AnimalCards;
+export default AnimalCard;

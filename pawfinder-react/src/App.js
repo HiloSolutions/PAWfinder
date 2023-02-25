@@ -1,5 +1,5 @@
 import './styles/App.css';
-import AnimalCards from "./components/AnimalCards";
+import AnimalCard from "./components/AnimalCard";
 import animals from "./routes/animalApi";
 
 
@@ -9,7 +9,8 @@ function App() {
     <div className="card-grid">
       {animals.map((item) => {
         return (
-          < AnimalCards
+          < AnimalCard
+            key={item.id}
             name={item.name}
             description={item.description}
             img1={item.photos[0].small}
