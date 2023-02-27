@@ -1,9 +1,10 @@
 import './styles/App.css';
-import AnimalCard from "./components/AnimalCard";
+import AnimalCard from "./components/Animals/AnimalCard";
 import animals from "./routes/animalApi";
+import axios from "axios";
 
 
-function App() {
+const App = () => {
 
   return (
     <div className="card-grid">

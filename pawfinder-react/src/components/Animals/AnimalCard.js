@@ -1,6 +1,6 @@
 
-import MatchButton from "./buttons/MatchButton";
-import SkipButton from "./buttons/SkipButton";
+import MatchButton from "../buttons/MatchButton";
+import SkipButton from "../buttons/SkipButton";
 import React, { useState } from "react";
 
 function AnimalCard(props) {

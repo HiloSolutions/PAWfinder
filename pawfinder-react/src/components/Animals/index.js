@@ -1,7 +1,7 @@
 //what gets sent to animals.js
-import Undo from "./Undo";
+import Undo from "./actions/Undo";
 import Match from "./Match";
-import Skip from "./Skip";
+import Skip from "./actions/Skip";
 
 
 export default function Animal() {
