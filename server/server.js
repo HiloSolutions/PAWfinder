@@ -10,7 +10,7 @@ const indexRouter = require("./routes/index.js");
 const path = require('path'); //build module allows us to specify file paths
 
 app.set('views',path.join(__dirname, 'views')); //define views engine
-app.set('view engine', 'ejs'); //type of views used
+
 
 //use routers
 app.use(express.json());

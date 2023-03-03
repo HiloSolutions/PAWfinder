@@ -1,3 +1,4 @@
+//THESE ARE EXAMPLE ROUTES THAT NEED TO BE PLANNED AND UPDATED
 const express = require("express"); //load express
 const router = express.Router();
 const animals = require('./petFinderAPI');
@@ -12,17 +13,28 @@ router.get('/', (req, res) => {
 
 //GET SPECIFIC ANIMAL
 router.get('/:animalID', (req, res) => {
-  const toDoID = req.params.toDoID;
-  const todo = todos[todoId];
-  res.json(todo);
+  const animalID = req.params.animalID;
+  const animal = animals[animalId];
+  res.json(animal);
 });
 
 //post api/animals to generate unique id
 router.post('/', (req, res) => {
   const task = req.body.task;
   const complete = false;
-  const id = Math.random(1)*10; //use package called uuid
-  res.json(arr);
+  const id = Math.random().toString(36).substring(2, 5); //use package called uuid
+  
+  const newTask = {
+    id,
+    task,
+    complete
+  };
+
+    animals[id] = newanimal;
+
+    res.status(202).send()//what happens when we create a new animal?
 });
+
+
 
 module.exports = router;
